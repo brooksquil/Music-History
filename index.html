@@ -14,12 +14,10 @@ Pick your four favorite songs from the artists you have chosen and use the infor
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="main.css" rel="stylesheet">
-
-
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <nav>
 
         <a href="#">View Music |</a>
@@ -31,7 +29,6 @@ Pick your four favorite songs from the artists you have chosen and use the infor
     <section class="container">
         <label for="slider">Song Length:</label>
         <input type="range" min="0" max="50" value="25" step="5" />
-
         <label for="dropdown">Artists:</label>
         <select name="Artists">
             <option value="artist1">Brandi Carlile</option>
@@ -54,56 +51,32 @@ Pick your four favorite songs from the artists you have chosen and use the infor
             <option value="artist5-album">25 | Adele</option>
         </select>
 
-
         <div id="checkbox">
+            <!-- box -->
             <label for="alt ">Alternative:</label>
             <input type="checkbox" id="alt" name="genre">
-
+            <!-- box -->
             <label for="singer ">Singer/Song Writer</label>
             <input type="checkbox" id="singer" name="genre">
-
-
+            <!-- box -->
             <label for="singer ">Folk</label>
             <input type="checkbox" id="folk" name="genre">
-
-
+            <!-- box -->
             <label for="singer ">Country</label>
             <input type="checkbox" id="country" name="genre">
-
-
+            <!-- box -->
             <label for="singer ">Rock</label>
             <input type="checkbox" id="rock" name="genre">
-
-
+            <!-- box -->
             <label for="singer ">Jazz</label>
             <input type="checkbox" id="Jazz" name="genre">
         </div>
     </section>
+
     <div id="right">
-        <h4>The Story</h4>
-        <div>
-            <p class="inline">Brandi Carlile |</p>
-            <p class="inline">The Story |</p>
-            <p class="inline">Folk </p>
-        </div>
-        <h4>Philosophy</h4>
-        <div>
-            <p class="inline">Ben Folds Five|</p>
-            <p class="inline">Ben Folds Five |</p>
-            <p class="inline">Alternative </p>
-        </div>
-        <h4>A Million Reasons</h4>
-        <div>
-            <p class="inline">Lady Gaga |</p>
-            <p class="inline">Joanne |</p>
-            <p class="inline">Rock </p>
-        </div>
-        <h4>Chasing Pavements</h4>
-        <div>
-            <p class="inline">Adele |</p>
-            <p class="inline">19 |</p>
-            <p class="inline">Singer/Song Writer </p>
-        </div>
+
+
+
     </div>
 
     <script src="main.js"></script>

@@ -1,3 +1,4 @@
+"use strict";
 console.log("Main.js");
 
 
@@ -36,13 +37,11 @@ for (let i = 0; i <= songs.length; i++) {
     songs[i] = songs[i].replace(/[!/]/g, "");
     console.log("Removed Special Characters:", songs);
 
-    var newArray = songs;
-    console.log("New Array:", newArray);
 
 
+    let printToDom = `<div id="song-array">
+        <h4>${songs}</h4>`
+    var makeDiv = document.getElementById('right');
+
+    makeDiv.innerHTML = printToDom;
 };
-$('#container-print').append(newArray);
-
-
-//Add each string to the DOM in index.html in the main content area. Example output:
-// {Song name} by {Artist} on the album {Album}

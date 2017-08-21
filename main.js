@@ -36,66 +36,12 @@ for (let i = 0; i <= songs.length; i++) {
     songs[i] = songs[i].replace(/[(/]/g, "");
     songs[i] = songs[i].replace(/[!/]/g, "");
     console.log("Removed Special Characters:", songs);
-};
 
 
-
-var mySongs = [];
-
-mySongs[mySongs.length] = {
-        song: "The Story",
-        name: "Brandi Carlile",
-        album: "The Story",
-        genre: "|  Folk"
-    },
-    mySongs[mySongs.length] = {
-        song: "Best Imitation of Myself",
-        name: "Ben Fold's Five",
-        album: "Whatever and Amen",
-        genre: "|  Aleternative"
-    },
-    mySongs[mySongs.length] = {
-        song: "Hello",
-        name: "Adele",
-        album: "25",
-        genre: "|  Pop"
-    },
-    mySongs[mySongs.length] = {
-        song: "Both Hands",
-        name: "Ani Difranco",
-        album: "Living in Clip",
-        genre: "|  Folk"
-    },
-    mySongs[mySongs.length] = {
-        song: "Joanne",
-        name: "Lady Gaga",
-        album: "Joanne",
-        genre: "|  Pop"
-    },
-    mySongs[mySongs.length] = {
-        song: "A Million Reasons",
-        name: "Lady Gaga",
-        album: "Joanne",
-        genre: "|  Pop"
-    },
-    mySongs[mySongs.length] = {
-        song: "Blackbird",
-        name: "Sara Mclachlan",
-        album: "I Am Sam",
-        genre: "|  Soundtrack"
-    };
-console.log("My Song Array", mySongs);
-
-
-for (let i = 0; i <= mySongs.length; i++) {
 
     let printToDom = `<div id="song-array">
-<h4>${mySongs.name}</h4>
-<p>By ${name} from the ${album} album  ${genre}</p>
-</div>`
-    var getDiv = document.getElementById('right');
+        <h4>${songs}</h4>`
+    var makeDiv = document.getElementById('right');
 
+    makeDiv.innerHTML = printToDom;
 };
-getDiv.innerHTML = printToDom;
-//Add each string to the DOM in index.html in the main content area. Example output:
-// {Song name} by {Artist} on the album {Album}

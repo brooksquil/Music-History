@@ -1,3 +1,23 @@
+/* ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  background-color: goldenrod;
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 2em;
+} */
+
 body {
     background-color: white;
     display: flex;
@@ -15,7 +35,7 @@ nav {
     width: 100%;
 }
 
-a {
+li a {
     justify-content: flex-start;
     clear: both;
     text-decoration-style: none;
@@ -47,7 +67,7 @@ a {
     display: inline-flex;
 }
 
-.container {
+#list-view {
     background-color: #4DD7FA;
     display: flex;
     flex-direction: column;

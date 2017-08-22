@@ -1,3 +1,11 @@
+<!-- Criteria
+
+Create five options for the artist select element of any artist that you enjoy.
+Create at least five options for the album select element. One, or more, album for each artist.
+The links in the navigation bar don't need to link to anything just yet, you can use <a href="#">View music</a> for now
+Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use h1 tags, div tags, section tags... whatever you like. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +19,14 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="#" id="link-list">List Music</a></li>
-            <li><a href="#" id="link-add">Add Music</a></li>
-        </ul>
+
+        <a href="#">View Music |</a>
+        <a href="#">Add Music |</a>
+        <a href="#">Profile</a>
+
     </nav>
-    <!-- List View Section/landing page -->
-    <section class="hidden" id="list-view">
+
+    <section class="container">
         <label for="slider">Song Length:</label>
         <input type="range" min="0" max="50" value="25" step="5" />
         <label for="dropdown">Artists:</label>
@@ -63,20 +72,15 @@
             <input type="checkbox" id="Jazz" name="genre">
         </div>
     </section>
-    <!-- Output Div -->
+
     <div id="right">
 
+
+
     </div>
-    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-    <!-- Add Music View -->
-    <section class="hidden" id="add-view">
-
-    </section>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
-    <script type="text/javascript" src="javascripts/list.js"></script>
-    <script type="text/javascript" src="javscripts/add.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
